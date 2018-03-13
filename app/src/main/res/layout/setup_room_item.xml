@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="14dp">
+
+    <TextView
+        android:id="@+id/room_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cômodo 1"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/room_name"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textCapWords"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/room_width"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Largura (3.0)"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/room_height"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comprimento (4.0)"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorDivider"/>
+
+</LinearLayout>

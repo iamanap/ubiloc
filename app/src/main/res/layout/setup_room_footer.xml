@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="14dp"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+    <TextView
+        android:id="@+id/room_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Adicionar cômodo"
+        android:textSize="16sp"
+        android:textColor="@color/colorGrey" />
+
+</LinearLayout>

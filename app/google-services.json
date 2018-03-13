@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "244097699517",
+    "firebase_url": "https://ubiloc-51953.firebaseio.com",
+    "project_id": "ubiloc-51953",
+    "storage_bucket": "ubiloc-51953.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244097699517:android:bbe8634a340c56b4",
+        "android_client_info": {
+          "package_name": "br.ufg.inf.ubicare.ubiloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244097699517-uk17p6iu4h019agkn0fon44h4tqocp29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ufg.inf.ubicare.ubiloc",
+            "certificate_hash": "1cc6472c1d62bbd4b945feab2815e904b4eb00e3"
+          }
+        },
+        {
+          "client_id": "244097699517-mo2iq9c2fihinep4g1119d3nk8784j31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wXmm0YLSRz9NXhbE1LttZbzrzVsfWDE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244097699517-mo2iq9c2fihinep4g1119d3nk8784j31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Disponha os 3 beacons da seguinte forma:"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/info"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/width_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="3m"
+            android:textSize="16sp"
+            android:textColor="@color/colorGreyDark"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:id="@+id/out_box_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/width_top">
+            
+            <RelativeLayout
+                android:id="@+id/box_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="78dp"
+                android:layout_marginRight="78dp"
+                android:background="@drawable/room_box"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/beacon2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="-16dp"
+                android:layout_alignLeft="@id/box_layout"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/beacon2"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_beacon"/>
+
+                <ImageView
+                    android:id="@+id/phone2"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/beacon2"
+                    android:src="@drawable/ic_phone"
+                    android:tint="@color/colorGreyDark"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/beacon3_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="-16dp"
+                android:layout_alignRight="@id/box_layout"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/phone3"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_phone"
+                    android:tint="@color/colorGreyDark"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/beacon3"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/phone3"
+                    android:src="@drawable/ic_beacon"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/height_left"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="3m"
+                android:textSize="16sp"
+                android:textColor="@color/colorGreyDark"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/box_layout"/>
+
+            <TextView
+                android:id="@+id/height_right"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="3m"
+                android:textSize="16sp"
+                android:textColor="@color/colorGreyDark"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/box_layout"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/beacon1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-16dp"
+            android:layout_alignTop="@id/out_box_layout">
+
+            <ImageView
+                android:id="@+id/beacon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_beacon"/>
+
+            <ImageView
+                android:id="@+id/phone1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/beacon"
+                android:src="@drawable/ic_phone"
+                android:tint="@color/colorGreyDark"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/width_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="3m"
+            android:textSize="16sp"
+            android:textColor="@color/colorGreyDark"
+            android:textAlignment="center"
+            android:layout_below="@id/out_box_layout"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/detect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detectar beacon"
+        android:layout_margin="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UbiCareLoc</string>
+    <string name="intent_room">intent_room</string>
+</resources>
