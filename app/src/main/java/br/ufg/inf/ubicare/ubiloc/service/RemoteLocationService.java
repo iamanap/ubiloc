@@ -111,10 +111,6 @@ public class RemoteLocationService extends Service {
             mScanner.scanLeDevice(-1, true);
         }
 
-//        HandlerThread thread = new HandlerThread("RemoteLocationService",
-//                Process.THREAD_PRIORITY_BACKGROUND);
-//        thread.start();
-
         Intent notificationIntent = new Intent(this, OptionsActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
                 notificationIntent, 0);
@@ -132,11 +128,6 @@ public class RemoteLocationService extends Service {
         mHandlerThread.start();
         mHandler = new Handler(mHandlerThread.getLooper());
         mHandler.post(loop);
-
-//        AlarmManager alarm = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-//        Intent inte = new Intent(this, RemoteLocationService.class);
-//        PendingIntent pendIntent = PendingIntent.getService(this, 0, inte, 0);
-//        alarm.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000, pendIntent);
     }
 
     private Runnable loop = new Runnable() {
@@ -160,15 +151,6 @@ public class RemoteLocationService extends Service {
 
         return START_STICKY;
     }
-
-//    private void resetHandler() {
-//        mServiceHandler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//            }
-//        }, 1000);
-//    }
 
     static double[] addElement(double[] a, double e) {
         a  = Arrays.copyOf(a, a.length + 1);
