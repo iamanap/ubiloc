@@ -5,7 +5,7 @@ Aplicativo Android desenvolvido usando Firebase, beacons e técnicas de trilater
 [Localização Usando Beacons em Ambientes Internos para Monitoramento Remoto de Pacientes](https://s3-sa-east-1.amazonaws.com/media.anappaula.com/ERI-GO+-+Localizac%CC%A7a%CC%83o+Usando+Beacons+em+Ambientes+Internos+para+Monitoramento+Remoto+de+Pacientes.pdf) publicado na [V Escola Regional de Informática de Goiás](http://erigo.sbc.org.br).
 
 ## Author
-hanappaula, apso0101@gmail.com.
+souana, apso0101@gmail.com.
 
 ## License
 Ubiloc está disponvel sobre a licença do MIT.
